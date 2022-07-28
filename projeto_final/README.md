@@ -1,5 +1,9 @@
 # Girassol
 
+## Autores
+
+![aitores](https://user-images.githubusercontent.com/55934217/181633281-27918956-1a76-4419-983b-054aceaece80.png)
+
 ## Motivação
 
 ![motivacao](https://user-images.githubusercontent.com/55934217/181629662-826bcc37-f253-43e9-aa1a-d01cc8f29579.png)
