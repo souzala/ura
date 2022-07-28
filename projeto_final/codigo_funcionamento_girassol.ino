@@ -1,57 +1,71 @@
 #include <Servo.h>
 
 Servo s;
-int pos_s = 0; //posicao da helice
-int ldrD = 3; //porta do LDR do lado direito
-int valor_formatadoD, valorD; //variaveis referentes ao LDR do lado direito
-int ldrE = 2; //porta do LDR do lado esquerdo
-int valor_formatadoE, valorE; //variaveis referentes ao LDR do lado esquerdo
 
-void setup() {
+int pos_s = 90; //posição da helice do servo motor
+int ldrD = A2; // porta do ldr da direita;
+int ldrE = A3; // porta do ldr da esquerda
+int valorD; //variavel referente ao LDR do lado direito
+int valorE; //variavel referente ao LDR do lado esquerdo
+int diferenca = 0;
+
+
+void setup(){
+  
   Serial.begin(9600);
   s.attach(4); //porta do servo motor
-  s.write(pos_s); //leitura da posicao inicial da helice = 0
+  pinMode(ldrD, INPUT);
+  pinMode(ldrE, INPUT);
+ 
 }
 
-void loop() {
+void loop(){
+   
+  s.write(pos_s);
+  delay(1000);
+  
   //leitura da luz que o LDR esta recebendo
   valorD = analogRead(ldrD);
-  valorE = analogRead(ldrE);
-
-  //formatacao do valor recebido referente a luz do LDR
-  valor_formatadoD = map(valorD, 0, 1023, 0, 100);
-  valor_formatadoE = map(valorE, 0, 1023, 0, 100);
-
-  delay(500);
-
-  // para o servo mexer para a direita
-  if (valor_formatadoD > valor_formatadoE){ // se a luz recebida pelo direito for maior que o esquerdo, move para a direita
-    
-    for (pos_s = 180; pos_s > 0; pos_s--){
-      s.write(1);
-      
-      //print dos valores do lado direito no serial
-      Serial.print("O valor de D quando o servo vai para a direita é: ");
-      Serial.println(valor_formatadoD);
-      Serial.print("O valor é E quando o servo vai para a direita é: ");
-      Serial.println(valor_formatadoE);
-    } 
-   
- }
+  valorE = analogRead (ldrE);
+  
+  //diferença dos valores que os dois LDRS estao recebendo
+  diferenca = valorD - valorE;
+  
+  //print dos valores
+  Serial.print("Valor LDR Direito: ");
+  Serial.println(valorD);
  
-  // para servo mover para esquerda
-  else if (valor_formatadoD < valor_formatadoE){ // se a luz recebida pelo esquerdo for maior que o direito, move para a esquerda
-    
-    for (pos_s = 0; pos_s < 180;pos_s++){
-    s.write(175);
-    
-    //print dos valores do lado direito no serial
-    Serial.print("O valor de D quando o servo vai para a esquerda é: ");
-    Serial.println(valor_formatadoD);
-    Serial.print("O valor é E quando o servo vai para a esquerda é: ");
-    Serial.println(valor_formatadoE);
-    }
+  Serial.print("Valor LDR Esquerdo: ");
+  Serial.println(valorE);  
 
+  Serial.print("Diferença         : ");
+  Serial.println(diferenca);  
+ 
+  //limite da movimentacao do servo motor
+  if(pos_s >= 180){
+    pos_s = 180;
+ 
   }
   
+  if(pos_s <= 0){
+    pos_s = 0;
+  }
+  
+  //condicao para o LDR ir para a direita
+  if(diferenca > 0){
+    pos_s = pos_s - 10;
+    Serial.println("O girassol irá se movimentar para a direita");  
+  }
+ 
+  //condicao para o LDR ir para a esquerda
+  if(diferenca < 0){
+    pos_s = pos_s + 10;
+    Serial.println("O girassol irá se movimentar para a esquerda");
+  }
+  
+  //condicao para o LDR permanecer na posição atual
+  if(diferenca == 0){
+    pos_s = pos_s;
+    Serial.println("Permanece na posição atual");
+  }
 }
