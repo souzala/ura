@@ -19,5 +19,5 @@
 ![circuito](https://user-images.githubusercontent.com/55934217/181630757-24aea32b-e7fe-4ffe-a348-e7c0927b62ce.png)
 
 ## Código utilizado
-![codigo](https://github.com/souzala/ura/blob/main/projeto_final/codigo_funcionamento_girassol.ino)
 
+https://github.com/souzala/ura/blob/main/projeto_final/codigo_funcionamento_girassol.ino
