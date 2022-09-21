@@ -18,6 +18,14 @@
 
 ![circuito](https://user-images.githubusercontent.com/55934217/181630757-24aea32b-e7fe-4ffe-a348-e7c0927b62ce.png)
 
+## Resultado Final
+![Resultado](https://user-images.githubusercontent.com/55934217/191489345-aa4cdc60-b280-4d80-a883-5bc38b70c159.jpeg)
+
+## Funcionamento
+
+https://user-images.githubusercontent.com/55934217/191489618-b551d162-59d2-4686-9f54-3f074435f5df.mp4
+
+
 ## Código utilizado
 
 https://github.com/souzala/ura/blob/main/projeto_final/codigo_funcionamento_girassol.ino
