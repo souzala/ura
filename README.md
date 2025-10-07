@@ -1,14 +1,7 @@
-<h1 align="center">🌻 Projeto Girassol – Rastreador Solar Educacional</h1>
+# 🌻 Projeto Girassol – Rastreador Solar Educacional</h1>
+ 
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/55934217/191489345-aa4cdc60-b280-4d80-a883-5bc38b70c159.jpeg" alt="Capa do Projeto" width="400">
-</p>
-
----
-
-## 🎯 Motivação
-
-O **Projeto Girassol** foi desenvolvido com o objetivo de demonstrar, de forma lúdica e acessível, o **princípio de rastreamento solar** (heliotropismo), utilizando **materiais recicláveis e componentes de baixo custo**.
+O **Projeto Girassol** foi desenvolvido com o objetivo de demonstrar, de forma lúdica e acessível, o **princípio de rastreamento solar**, utilizando **materiais recicláveis e componentes de baixo custo**.
 
 A proposta busca integrar **educação, sustentabilidade e tecnologia**, incentivando a curiosidade científica em crianças do ensino básico e promovendo a conscientização sobre o uso de energias renováveis.
 
@@ -16,7 +9,6 @@ A proposta busca integrar **educação, sustentabilidade e tecnologia**, incenti
   <img src="https://user-images.githubusercontent.com/55934217/181629662-826bcc37-f253-43e9-aa1a-d01cc8f29579.png" alt="Motivação" width="600">
 </p>
 
----
 
 ## 🧩 Materiais Utilizados
 
@@ -30,39 +22,15 @@ A proposta busca integrar **educação, sustentabilidade e tecnologia**, incenti
 | Diversos | Materiais recicláveis (papel, PET, EVA) | Estrutura e acabamento do “girassol” |
 | — | Jumpers e resistores | Conexões elétricas |
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/55934217/181630513-901fd447-97b3-45ff-9119-7e74e883bb5a.png" alt="Materiais" width="600">
-</p>
-
----
 
 ## ⚙️ Circuito
 
-O circuito utiliza dois sensores LDR posicionados em lados opostos da flor, conectados às portas analógicas do Arduino. O servo motor ajusta a direção do “girassol” conforme a diferença de luminosidade detectada.
+O circuito utiliza dois sensores LDR posicionados em lados opostos do "Girassol", conectados às portas analógicas do Arduino. O servo motor ajusta a direção do “Girassol” conforme a diferença de luminosidade detectada.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/55934217/181630757-24aea32b-e7fe-4ffe-a348-e7c0927b62ce.png" alt="Circuito" width="600">
 </p>
 
-> 💡 **Dica:** consulte o arquivo `wiring_diagram.png` para ver o diagrama de fiação completo e facilitar a reprodução do projeto.
-
----
-
-## 🌻 Resultado Final
-
-O resultado é um protótipo funcional capaz de **acompanhar uma fonte de luz** em tempo real, simulando o comportamento natural de um girassol.
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/55934217/191489345-aa4cdc60-b280-4d80-a883-5bc38b70c159.jpeg" alt="Resultado Final" width="400">
-</p>
-
----
-
-## ▶️ Demonstração de Funcionamento
-
-🎥 [**Clique aqui para assistir ao vídeo de demonstração**](https://user-images.githubusercontent.com/55934217/191489618-b551d162-59d2-4686-9f54-3f074435f5df.mp4)
-
----
 
 ## 💾 Código Utilizado
 
@@ -142,23 +110,20 @@ void loop(){
 }
 ```
 
----
 
-## 📚 Aplicação Educacional
+## ▶️ Demonstração de Funcionamento
 
-O projeto foi aplicado em contexto pedagógico com crianças de **5 a 7 anos**, no **Núcleo de Educação da Infância (NEI/UFRN)**, para apoiar o aprendizado sobre o **ciclo de vida do girassol** e **energias renováveis**.
+🎥 [**Clique aqui para assistir ao vídeo de demonstração**](https://user-images.githubusercontent.com/55934217/191489618-b551d162-59d2-4686-9f54-3f074435f5df.mp4)
 
-A atividade promoveu engajamento, curiosidade e compreensão prática de conceitos de **ciência e tecnologia**, com base em uma metodologia **mão na massa**.
 
----
+## 🌻 Resultado Final
 
-## 🔋 Limitações e Melhorias Futuras
+O resultado é um protótipo funcional capaz de **acompanhar uma fonte de luz** em tempo real, simulando o comportamento natural de um girassol.
 
-- **Duração da bateria:** cerca de 40 minutos por carga.  
-- **Fragilidade estrutural:** pode ser aprimorada com materiais mais rígidos.  
-- **Escalabilidade:** pretende-se aplicar a turmas maiores e incluir novas funcionalidades (rastreamento em dois eixos).  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/55934217/191489345-aa4cdc60-b280-4d80-a883-5bc38b70c159.jpeg" alt="Resultado Final" width="400">
+</p>
 
----
 
 ## 🧠 Licença
 
