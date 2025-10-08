@@ -118,7 +118,7 @@ void loop(){
 
 ## 🌻 Resultado Final
 
-O resultado é um protótipo funcional capaz de **acompanhar uma fonte de luz** em tempo real, simulando o comportamento natural de um girassol. Com uma estrutura aproximada de 20cm de altura, 17 cm de comprimento e 9 de largura.
+O resultado é um protótipo funcional capaz de **acompanhar uma fonte de luz** em tempo real, simulando o comportamento natural de um girassol. Com uma estrutura aproximada de 27,5 cm de altura, 17,5 cm de comprimento e 9,5 cm de largura.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/55934217/191489345-aa4cdc60-b280-4d80-a883-5bc38b70c159.jpeg" alt="Resultado Final" width="400">
